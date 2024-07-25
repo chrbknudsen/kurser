@@ -38,9 +38,23 @@ data %>%
 
 # Histograms
 
+data <- tibble(income = c(132754,137192,122177,147121,143000,126010,129200,124312,128132))
+data %>% mutate(gruppe = cut(income, c(120000,130000,140000, 150000))) %>% 
+  group_by(gruppe) %>% 
+  summarise(frekvens = n())
+
 # Histograms 2
 
+data <- tibble(income = c(132754,137192,122177,147121,143000,126010,129200,124312,128132))
+data %>% mutate(gruppe = cut(income, c(120000,130000,140000, 150000))) %>% 
+  group_by(gruppe) %>% 
+  summarise(frekvens = n())
 
 # Age Distribution
+data <- tibble(age = c(21,17,9,27,12,39,4,32,12,14,38,9,19,22,21,14,8,3,31,15,33,29))
+data %>% 
+  group_by(round(age %/% 10)) %>% 
+  summarise(antal = n())
 
 # Summary
+## Forskellen på barcharts og histograms. 2D vs 1D

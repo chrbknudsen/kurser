@@ -1,0 +1,17 @@
+---
+title: "Untitled"
+format: html
+---
+
+## Forskel på PCA og EFA
+
+PCA forklarer den totale varians. EFA forklarer den fælles varians.
+
+PCA identifcerer mål der er tilstrækketligt ens til at berettige at de kombineeres.
+Mens EFA fanger underliggende, latente, konstrukter, som vi antager forklarer 
+variansen.
+
+## definitioner
+loadings - correlations between eac variable and component/factor
+communality - the amount of variance of each variable explained by the factor structure
+uniqueness - the amount of variance of each variable not explained by the factor structure (1-communality)

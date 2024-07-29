@@ -15,3 +15,29 @@ variansen.
 loadings - correlations between eac variable and component/factor
 communality - the amount of variance of each variable explained by the factor structure
 uniqueness - the amount of variance of each variable not explained by the factor structure (1-communality)
+
+## PCA
+En metode der reducerer data til få principiale komponenter, der maximerer 
+mængden af forklaret varians.
+
+Den undersøter al varianse i korrelations matrixen, og antager at der ikke 
+er måleusikkerheder.
+
+Målet er at reducere antallet af variabel til et mindre sæt dimentioner.
+
+Altovervejende en eksplorativ metode.
+
+### correlation
+er covariationen mellem to vektorer (variable)
+
+En korrelationsmatrix er alle de mulige parvise korrelationer mellem
+de vektorer vi nu har.
+
+Vi beregner egenværdier og egenvektorer fra matricen - dvs vi 
+identificerer komponenterne.
+
+Egenvektorerne er de principiale komponenter. Og egenværdierne er 
+den mængde varians som de principiale komponenter forklarer.
+
+
+
